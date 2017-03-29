@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>Assignment 2</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="move-right">This moves to the right over the course of one second.</div>
+   <p>A paragraph that is eventually hidden.</p>
+   <p>I will eventually move up.</p>
+<script>
+$('div.move-right').animate(
+    {
+        left: "+=50",
+        opacity: 0.3
+    },
+    2000
+);
+
+$('p:first-of-type').fadeToggle(2000);
+</script>
+</body>
+</html>
